@@ -10,11 +10,7 @@ function validateUser(){
             return res.status(400).json({
                 errorMessage: "Please input a username"
             })
-        } else if(!req.body.department){
-            return res.status(400).json({
-                errorMessage: "Please input your department"
-            })
-        } else{
+        }  else{
             next()
         }
     }

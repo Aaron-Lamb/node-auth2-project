@@ -13,6 +13,7 @@ function getUserBy(filter){
         'password', 
         'department')
     .where(filter)
+    .first()
 }
 
 function getUserById(id){
